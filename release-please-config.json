@@ -2,8 +2,29 @@
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "maven",
   "include-component-in-tag": true,
-  "plugins": [{ "type": "maven-workspace" }],
+  "plugins": [
+    {
+      "type": "maven-workspace"
+    }
+  ],
   "packages": {
-    "template-core": { "component": "template-core", "initial-version": "0.1.0" }
+    "knowledge-core": {
+      "component": "knowledge-core",
+      "initial-version": "0.1.0",
+      "versioning": "always-bump-patch",
+      "skip-snapshot": true
+    },
+    "knowledge-testkit": {
+      "component": "knowledge-testkit",
+      "initial-version": "0.1.0",
+      "versioning": "always-bump-patch",
+      "skip-snapshot": true
+    },
+    "knowledge-spring-boot-autoconfig": {
+      "component": "knowledge-spring-boot-autoconfig",
+      "initial-version": "0.1.0",
+      "versioning": "always-bump-patch",
+      "skip-snapshot": true
+    }
   }
 }
